@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+html {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #f0e5e1;
+}
+
+body {
+    display: flex;
+    width: 100%;
+}
+
+.summary {
+    display: flex;
+    flex-direction: column;
+    padding-left: 10px;
+    height: 100vh;
+    width: 25%;
+    overflow-y: auto;
+    position: fixed;
+}
+
+.tutorial {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 70%;
+}
+
+h1 {
+    padding: 50px 0 20px 0;
+}
+
+img, video {
+    width: 90%;
+    padding: 20px 0 20px 0;
+    filter: drop-shadow(0px 10px 10px rgba(0,0,0,0.1));
+}
+
+.preambule {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+.preambule-text {
+    width: 60%;
+}
+
+a {
+    color: black;
+}
+
+a:hover {
+    cursor: pointer;
+}
+
+.summary a {
+    margin-bottom: 10px;
+}
