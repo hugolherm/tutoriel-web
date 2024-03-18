@@ -16,24 +16,18 @@ html {
 }
 
 body {
-    display: flex;
     width: 100%;
 }
 
 .summary {
     display: flex;
     flex-direction: column;
-    padding-left: 10px;
-    height: 100vh;
     width: 25%;
-    overflow-y: auto;
-    position: fixed;
+    padding: 0 20px 0 20px;
+    background-color: #e1d6d6;
 }
 
 .tutorial {
-    position: absolute;
-    top: 0;
-    right: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -64,7 +58,7 @@ iframe {
 }
 
 .preambule-text {
-    width: 60%;
+    width: 90%;
 }
 
 a {
@@ -77,4 +71,71 @@ a:hover {
 
 .summary a {
     margin-bottom: 10px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.summary a :hover{
+    color: darkblue;
+}
+
+.preambule-container {
+    display: flex;
+    padding: 15px;
+    gap: 20px;
+}
+
+@media (min-width: 1000px) {
+    .summary {
+        height: 100vh;
+        overflow-y: auto;
+        position: fixed;
+    }
+
+    .tutorial {
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+
+    #title1 {
+        display: none;
+    }
+
+    #title2 {
+        display: block;
+    }
+}
+
+@media (max-width: 999px) {
+    body {
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;    
+    }
+
+    .summary {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width : 100%;
+    }
+
+    .tutorial {
+        width: 90%;
+    }
+
+    #title1 {
+        display: block;
+    }
+
+    #title2 {
+        display: none;
+    }
+
+    .preambule-container {
+        flex-direction: column;
+    }
 }
